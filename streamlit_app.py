@@ -6,13 +6,13 @@ import requests
 BASE_URL = "http://localhost:8000"
 
 st.set_page_config(
-    page_title="AI Travel Planner",
-    page_icon=":airplane:",
+    page_title="🛫 AI Travel Planner",
+    page_icon="🛫",
     layout="centered",
     initial_sidebar_state="expanded"
 )
 
-st.title("AI Travel Planner")
+st.title("🛫 AI Travel Planner")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -21,7 +21,7 @@ if "messages" not in st.session_state:
 st.header("How can I help you in planning your next adventure?")
 
 with st.form(key="query_form", clear_on_submit=True):
-    user_input = st.text_input("User Input", placeholder="e.g. Plane a trip to Goa for 5 days")
+    user_input = st.text_input("User Input", placeholder="e.g. Plan a trip to Goa for 5 days")
     submit_button = st.form_submit_button("Submit")
 
 if submit_button and user_input.strip():
