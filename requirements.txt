@@ -15,5 +15,6 @@ langchain_tavily
 pyyaml
 langgraph
 langchain-google-community[places]
+ipykernel
 
 -e .
